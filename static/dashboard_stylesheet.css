@@ -1,0 +1,127 @@
+:root {
+    /* Primary Colors for Charts */
+  --color-primary: #3A66D3; /* Soft Blue */
+  --color-secondary: #8B5CFF; /* Muted Purple */
+  --color-tertiary: #2CA58D; /* Soft Teal */
+  --color-quaternary: #FFA726; /* Bright Orange */
+  --color-quinary: #FF7043; /* Bold Orange Red */
+  --color-senary: #66BB6A; /* Lush Green */
+  --color-septenary: #42A5F5; /* Clear Sky Blue */
+  --color-octonary: #AB47BC; /* Vibrant Violet */
+  --color-nonary: #EF5350; /* Light Coral Red */
+  --color-denary: #FFEB3B; /* Vivid Yellow */
+  
+  /* Status Colors */
+  --color-success: #4CAF50; /* Green for success */
+  --color-danger: #FF5C73; /* Light Red for danger */
+  --color-warning: #FFB74D; /* Amber for warnings */
+  --color-info: #1AB2FF; /* Bright Cyan for information */
+  --color-error: #D32F2F; /* Darker red for errors */
+  
+  /* Neutral Colors */
+  --color-neutral-dark: #2C2B2A; /* Deep Charcoal */
+  --color-neutral-light: #8B92A8; /* Cool light gray */
+  --color-neutral-bg: #F5F5F5; /* Subtle background */
+  
+  /* Accent Colors */
+  --color-accent1: #FFB3BA; /* Soft Coral */
+  --color-accent2: #FFDAC1; /* Peach */
+  --color-accent3: #E2F0CB; /* Soft Lime */
+  --color-accent4: #C9E4FF; /* Pastel Blue */
+  
+  /* Background Colors */
+  --color-background-light: #F3F6FB; /* Soft Light Background */
+  --color-background-dark: #2C2B2A; /* Deep Background */
+  --color-background-muted: #DDE3EB; /* Subtle gray-blue for muted areas */
+  }
+  
+  /* General styling for body */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background-muted);
+  }
+  
+  /* Styling for the main container */
+  .container-fluid {
+    width: 100%;
+    padding: 0;
+    background-color: var(--color-background-muted);
+  }
+  
+  /* Styling for the dashboard title */
+  .dashboard-title {
+    text-align: left;
+    font-size: 2rem; /* Dynamic text size */ 
+    font-weight: bolder; 
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: white;
+    color: var(--color-neutral-dark);
+  }
+  
+  /* Chart grid for visuals */
+  .chart-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Default 2 columns */
+    grid-gap: 30px; /* Space between charts */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Chart container for padding around each chart */
+  .chart-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    min-width: 0; /* Allow dynamic width */
+    min-height: 0; /* Allow dynamic height */
+  }
+  
+  /* Ensure that title texts inside the charts are also responsive */
+  .chart-title {
+    font-size: 1.2rem; /* Responsive text size */
+    font-weight: bold;
+    color: var(--color-neutral-dark);
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .chart-grid {
+      grid-template-columns: 1fr; /* Collapse to 1 column on smaller screens */
+    }
+  
+    .dashboard-title {
+      font-size: 1.8rem; /* Adjust title size for smaller screens */
+    }
+  
+    .chart-title {
+      font-size: 1rem; /* Adjust chart title size */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .chart-grid {
+      grid-template-columns: 1fr; /* Single column on very small screens */
+      grid-gap: 20px; /* Reduce spacing between charts */
+    }
+  
+    .dashboard-title {
+      font-size: 1.5rem; /* Further reduce title size for small screens */
+    }
+  
+    .chart-title {
+      font-size: 0.8rem; /* Further reduce chart title size */
+    }
+  }
+  
+  

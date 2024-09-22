@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well Drilling Efficiency Dashboard</title>
+
+    <!-- Bootstrap for layout and styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Chart.js for rendering charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+
+
+    <!-- Link to the external CSS file for custom dashboard styling -->
+    <link rel="stylesheet" href="../static/dashboard_stylesheet.css">
+</head>
+
+<body>
+    <!-- Dashboard header section -->
+    <header>
+        <div class="dashboard-title">Wells Drilling Efficiency</div>
+    </header>
+
+    <!-- Main content container where all charts will be rendered -->
+    <div class="container-fluid">
+        <section>
+            <div class="chart-grid">
+                <!-- First chart -->
+                <div class="chart-container">
+                    <h2 class="chart-title">Efficiency by Year</h2>
+                    <canvas id="wellcountsChart"></canvas>
+                </div>
+
+                <!-- Second chart -->
+                <div class="chart-container">
+                    <h2 class="chart-title">Efficiency by Geological Era</h2>
+                    <canvas id="eracountsChart"></canvas>
+                </div>
+
+                <!-- Third chart -->
+                <div class="chart-container">
+                    <h2 class="chart-title">Efficiency by Region</h2>
+                    <canvas id="regioncountsChart"></canvas>
+                </div>
+
+                <!-- Fourth chart -->
+                <div class="chart-container">
+                    <h2 class="chart-title">Efficiency by Well Type</h2>
+                    <canvas id="welltypecountsChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <!-- Link to the external JavaScript file containing chart logic -->
+    <script src="../static/dashboard.js"></script>
+</body>
+
+</html>
+
+
