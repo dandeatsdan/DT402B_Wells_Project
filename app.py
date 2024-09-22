@@ -64,14 +64,6 @@ def format_query_response(query: str, key1: str, key2: str) -> dict:
     values2 = [row[1] for row in result]
     return {key1: values1, key2: values2}
 
-# Generalized function for single-value API responses
-def handle_well_data(query: str, response_key: str, formatter=None) -> Response:
-    result = query_db(query)
-    value = result[0][0] if result and result[0][0] is not None else 0
-    if formatter:
-        value = formatter(value)
-    return jsonify({response_key: value})
-
 # Generalized function for routes returning grouped averages
 def handle_grouped_avg_data(query: str, key1: str, key2: str) -> Response:
     data = format_query_response(query, key1, key2)
@@ -83,71 +75,80 @@ def handle_grouped_avg_data(query: str, key1: str, key2: str) -> Response:
 def index() -> str:
     return render_template("dashboard.html")
 
-# Total wells route (Single value)
-@app.route("/api/total_wells", methods=["GET"])
+# Grouped average routes for days/cost per geological era
+@app.route("/api/<column>_per_era", methods=["GET"])
 @cache.cached(timeout=60)
-def total_wells() -> Response:
-    query = "SELECT COUNT(Number_of_Wells) FROM WellsDataTable;"
-    return handle_well_data(query, "total_wells")
-
-# Average days per 1000m route (Single value)
-@app.route("/api/avg_days", methods=["GET"])
-@cache.cached(timeout=60)
-def avg_days() -> Response:
-    query = "SELECT AVG(Days_per_1000m) FROM WellsDataTable;"
-    return handle_well_data(query, "avg_days", formatter=lambda x: round(x, 1))
-
-# Grouped average routes (Using the same handler for all grouped averages)
-@app.route("/api/days_per_era", methods=["GET"])
-@cache.cached(timeout=60)
-def days_per_era() -> Response:
-    query = """
+def data_per_era(column: str) -> Response:
+    if column not in ["days", "cost"]:
+        abort(404, description="Invalid column")
+    
+    column_name = "Days_per_1000m" if column == "days" else "Cost_per_1000m"
+    
+    query = f"""
     WITH CTE_ERA AS (
-    SELECT b.Era, AVG(a.Days_per_1000m) AS avg_days
+    SELECT b.Era, AVG(a.{column_name}) AS avg_{column}
     FROM WellsDataTable a
     LEFT JOIN AgeDim b ON UPPER(a.Age) = UPPER(b.Age)
     GROUP BY b.Era)
     SELECT * FROM CTE_ERA
-    ORDER BY avg_days DESC;
+    ORDER BY avg_{column} DESC;
     """
-    return handle_grouped_avg_data(query, "Era", "avg_days")
+    return handle_grouped_avg_data(query, "Era", f"avg_{column}")
 
-@app.route("/api/days_per_well_type", methods=["GET"])
+# Grouped average routes for days/cost per well type
+@app.route("/api/<column>_per_well_type", methods=["GET"])
 @cache.cached(timeout=60)
-def days_per_well_type() -> Response:
-    query = """
+def data_per_well_type(column: str) -> Response:
+    if column not in ["days", "cost"]:
+        abort(404, description="Invalid column")
+
+    column_name = "Days_per_1000m" if column == "days" else "Cost_per_1000m"
+    
+    query = f"""
     WITH CTE_WELL_TYPE AS (
-    SELECT b.Well_Type_Name, AVG(a.Days_per_1000m) AS avg_days
+    SELECT b.Well_Type_Name, AVG(a.{column_name}) AS avg_{column}
     FROM WellsDataTable a
     LEFT JOIN WellTypeDim b ON UPPER(a.Well_Type) = UPPER(b.Well_Type)
     GROUP BY b.Well_Type_Name)
     SELECT * FROM CTE_WELL_TYPE
-    ORDER BY avg_days DESC;
+    ORDER BY avg_{column} DESC;
     """
-    return handle_grouped_avg_data(query, "Well_Type", "avg_days")
+    return handle_grouped_avg_data(query, "Well_Type", f"avg_{column}")
 
-@app.route("/api/days_per_region", methods=["GET"])
+# Grouped average routes for days/cost per region
+@app.route("/api/<column>_per_region", methods=["GET"])
 @cache.cached(timeout=60)
-def days_per_region() -> Response:
-    query = """
+def data_per_region(column: str) -> Response:
+    if column not in ["days", "cost"]:
+        abort(404, description="Invalid column")
+    
+    column_name = "Days_per_1000m" if column == "days" else "Cost_per_1000m"
+    
+    query = f"""
     WITH CTE_REGION AS (
-    SELECT a.Region, AVG(a.Days_per_1000m) AS avg_days
+    SELECT a.Region, AVG(a.{column_name}) AS avg_{column}
     FROM WellsDataTable a
     GROUP BY a.Region)
     SELECT * FROM CTE_REGION
-    ORDER BY avg_days DESC;
+    ORDER BY avg_{column} DESC;
     """
-    return handle_grouped_avg_data(query, "Region", "avg_days")
+    return handle_grouped_avg_data(query, "Region", f"avg_{column}")
 
-@app.route("/api/days_per_year", methods=["GET"])
+# Grouped average routes for days/cost per year
+@app.route("/api/<column>_per_year", methods=["GET"])
 @cache.cached(timeout=60)
-def days_per_year() -> Response:
-    query = """
-    SELECT a.Year, AVG(a.Days_per_1000m) AS avg_days
+def data_per_year(column: str) -> Response:
+    if column not in ["days", "cost"]:
+        abort(404, description="Invalid column")
+    
+    column_name = "Days_per_1000m" if column == "days" else "Cost_per_1000m"
+    
+    query = f"""
+    SELECT a.Year, AVG(a.{column_name}) AS avg_{column}
     FROM WellsDataTable a
     GROUP BY a.Year;
     """
-    return handle_grouped_avg_data(query, "Year", "avg_days")
+    return handle_grouped_avg_data(query, "Year", f"avg_{column}")
 
 ###################################################################################
 # Run the app
@@ -155,3 +156,4 @@ if __name__ == "__main__":
     import os
     debug_mode = os.getenv("FLASK_DEBUG", "false").lower() == "true"
     app.run(debug=debug_mode)
+
