@@ -13,7 +13,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
 
-
     <!-- Link to the external CSS file for custom dashboard styling -->
     <link rel="stylesheet" href="../static/dashboard_stylesheet.css">
 </head>
@@ -21,7 +20,13 @@
 <body>
     <!-- Dashboard header section -->
     <header>
-        <div class="dashboard-title">Wells Drilling Efficiency</div>
+        <div class="dashboard-title">
+            Wells Drilling Efficiency
+            <div class="btn-group float-right" role="group" aria-label="Toggle column">
+                <button type="button" class="btn btn-primary" id="days-btn">Days</button>
+                <button type="button" class="btn btn-secondary" id="cost-btn">Cost</button>
+            </div>
+        </div>
     </header>
 
     <!-- Main content container where all charts will be rendered -->
@@ -55,10 +60,11 @@
         </section>
     </div>
 
-        <!-- Link to the external JavaScript file containing chart logic -->
+    <!-- Link to the external JavaScript file containing chart logic -->
     <script src="../static/dashboard.js"></script>
 </body>
 
 </html>
+
 
 
