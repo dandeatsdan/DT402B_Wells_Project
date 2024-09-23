@@ -15,12 +15,13 @@ function remToPixels(rem) {
 let selectedColumn = 'days';  // Default to 'days'
 
 // Handle button toggling between 'Days' and 'Cost'
+// if days
 document.getElementById('days-btn').addEventListener('click', function () {
     selectedColumn = 'days';
     toggleButtons(this, document.getElementById('cost-btn'));
     refreshCharts();
 });
-
+// if costs
 document.getElementById('cost-btn').addEventListener('click', function () {
     selectedColumn = 'cost';
     toggleButtons(this, document.getElementById('days-btn'));
@@ -59,6 +60,17 @@ async function fetchDataAndRenderChart(apiEndpoint, chartElementId, chartConfig)
 function refreshCharts() {
     const apiEndpointPrefix = selectedColumn === 'days' ? "/api/days" : "/api/cost";
     
+    // Configuration for the tooltip callback
+    const tooltipCallback = {
+        callbacks: {
+            label: function (tooltipItem) {
+                var value = tooltipItem.raw;
+                // Format with comma separation and 1 decimal place
+                return value.toLocaleString('en-UK', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+            }
+        }
+    };
+
     // Refresh the Efficiency by Year chart
     fetchDataAndRenderChart(`${apiEndpointPrefix}_per_year`, "wellcountsChart", (data) => ({
         type: "line",
@@ -88,7 +100,9 @@ function refreshCharts() {
                 },
                 x: { display: true }
             },
-            plugins: { legend: { display: false } }
+            plugins: { 
+                tooltip: tooltipCallback,
+                legend: { display: false } }
         }
     }));
 
@@ -131,7 +145,9 @@ function refreshCharts() {
                     beginAtZero: false,
                     display: true }
             },
-            plugins: { legend: { display: false } }
+            plugins: { 
+                tooltip: tooltipCallback,
+                legend: { display: false } }
         }
     }));
 
@@ -173,7 +189,9 @@ function refreshCharts() {
                         font: { size: remToPixels(0.8) }
                     }
                 },
-                x: { display: true }
+                x: { 
+                    tooltip: tooltipCallback,
+                    display: true },
             },
             plugins: { legend: { display: false } }
         }
@@ -213,7 +231,9 @@ function refreshCharts() {
                 },
                 x: { display: true }
             },
-            plugins: { legend: { display: false } }
+            plugins: { 
+                tooltip: tooltipCallback,
+                legend: { display: false } }
         }
     }));
 }
