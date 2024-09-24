@@ -1,16 +1,1 @@
-2024-09-23 07:03:16,439 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2024-09-23 07:03:16,440 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2024-09-23 07:03:20,208 - werkzeug - INFO - 127.0.0.1 - - [23/Sep/2024 07:03:20] "GET / HTTP/1.1" 200 -
-2024-09-23 07:03:20,504 - werkzeug - INFO - 127.0.0.1 - - [23/Sep/2024 07:03:20] "[36mGET /static/dashboard_stylesheet.css HTTP/1.1[0m" 304 -
-2024-09-23 07:03:20,521 - werkzeug - INFO - 127.0.0.1 - - [23/Sep/2024 07:03:20] "GET /static/dashboard.js HTTP/1.1" 200 -
-2024-09-23 07:03:20,718 - root - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2024-09-23 07:03:20,719 - werkzeug - INFO - 127.0.0.1 - - [23/Sep/2024 07:03:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2024-09-23 07:03:20,920 - werkzeug - INFO - 127.0.0.1 - - [23/Sep/2024 07:03:20] "GET /api/days_per_era HTTP/1.1" 200 -
-2024-09-23 07:03:21,007 - werkzeug - INFO - 127.0.0.1 - - [23/Sep/2024 07:03:21] "GET /api/days_per_year HTTP/1.1" 200 -
-2024-09-23 07:03:21,040 - werkzeug - INFO - 127.0.0.1 - - [23/Sep/2024 07:03:21] "GET /api/days_per_well_type HTTP/1.1" 200 -
-2024-09-23 07:03:21,052 - werkzeug - INFO - 127.0.0.1 - - [23/Sep/2024 07:03:21] "GET /api/days_per_region HTTP/1.1" 200 -
-2024-09-23 07:03:23,980 - werkzeug - INFO - 127.0.0.1 - - [23/Sep/2024 07:03:23] "GET /api/cost_per_year HTTP/1.1" 200 -
-2024-09-23 07:03:24,214 - werkzeug - INFO - 127.0.0.1 - - [23/Sep/2024 07:03:24] "GET /api/cost_per_well_type HTTP/1.1" 200 -
-2024-09-23 07:03:24,242 - werkzeug - INFO - 127.0.0.1 - - [23/Sep/2024 07:03:24] "GET /api/cost_per_era HTTP/1.1" 200 -
-2024-09-23 07:03:24,281 - werkzeug - INFO - 127.0.0.1 - - [23/Sep/2024 07:03:24] "GET /api/cost_per_region HTTP/1.1" 200 -
+
