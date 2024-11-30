@@ -63,5 +63,33 @@ class TestApiEndpoints(unittest.TestCase):
         for result in results:
             print(result)
 
+    def test_summary_stats(self):
+            endpoint = "/api/summary_stats"
+            try:
+                # Make the GET request
+                response = self.app.get(endpoint)
+
+                # Test the response status
+                self.assertEqual(response.status_code, 200, f"{endpoint}: FAILED - Status code {response.status_code}")
+
+                # Test if response is JSON
+                self.assertTrue(response.is_json, f"{endpoint}: FAILED - Response is not JSON")
+
+                # Parse JSON response
+                data = response.json
+
+                # Check for expected keys
+                for key in ["total_wells", "avg_cost", "avg_days"]:
+                    self.assertIn(key, data, f"{endpoint}: FAILED - Missing key {key}")
+
+                # Validate the types of the keys
+                self.assertIsInstance(data["total_wells"], (int, float), f"{endpoint}: FAILED - total_wells is not a number")
+                self.assertIsInstance(data["avg_cost"], (int, float), f"{endpoint}: FAILED - avg_cost is not a number")
+                self.assertIsInstance(data["avg_days"], (int, float), f"{endpoint}: FAILED - avg_days is not a number")
+
+                print(f"{endpoint}: PASSED")
+            except Exception as e:
+                self.fail(f"{endpoint}: FAILED - Exception {str(e)}")
+
 if __name__ == "__main__":
     unittest.main()

@@ -53,15 +53,26 @@ body {
 
 /* Styling for the dashboard title */
 .dashboard-title {
-  text-align: left;
-  font-size: 2rem; /* Dynamic text size */ 
-  font-weight: bolder; 
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Distribute space between title+subtitle and buttons */
+  align-items: center; /* Align items vertically */
+  font-size: 2rem; /* Font size for the title */
+  font-weight: bold;
   margin-bottom: 10px;
   padding: 10px;
   padding-left: 30px;
   background-color: white;
   color: var(--color-neutral-dark);
 }
+
+.dashboard-subtitle {
+  font-size: 1.2rem; /* Smaller than the title */
+  font-weight: normal;
+  color: var(--color-neutral-dark);
+  margin-top: 5px;
+}
+
+
 
 /* Chart grid for visuals */
 .chart-grid {
@@ -105,6 +116,10 @@ body {
     font-size: 1.8rem; /* Adjust title size for smaller screens */
   }
 
+  .dashboard-subtitle {
+    font-size: 1rem; /* Adjust title size for smaller screens */
+  }
+
   .chart-title {
     font-size: 1rem; /* Adjust chart title size */
   }
@@ -120,12 +135,24 @@ body {
     font-size: 1.5rem; /* Further reduce title size for small screens */
   }
 
+  .dashboard-subtitle {
+    font-size: 0.8rem; /* Adjust title size for smaller screens */
+  }
+
   .chart-title {
     font-size: 0.8rem; /* Further reduce chart title size */
   }
 }
 
 /* Styling for buttons in the header */
+
+
+.btn-group {
+  display: flex; /* Ensure buttons stay inline */
+  gap: 10px; /* Add spacing between buttons */
+}
+
+
 .btn.active {
   background-color: var(--color-primary) !important;
   color: white;

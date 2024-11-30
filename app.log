@@ -87,3 +87,200 @@
 2024-11-27 17:14:00,359 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2024 17:14:00] "GET /api/days_per_year HTTP/1.1" 200 -
 2024-11-27 17:14:00,373 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2024 17:14:00] "GET /api/days_per_era HTTP/1.1" 200 -
 2024-11-27 17:14:32,203 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2024 17:14:32] "GET /api/cost_per_era HTTP/1.1" 200 -
+2024-11-30 14:51:57,597 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 14:51:57,598 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 14:52:10,395 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:52:10] "GET / HTTP/1.1" 200 -
+2024-11-30 14:52:10,662 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:52:10] "GET /static/dashboard.js HTTP/1.1" 200 -
+2024-11-30 14:52:10,662 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:52:10] "GET /static/dashboard_stylesheet.css HTTP/1.1" 200 -
+2024-11-30 14:52:10,728 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:52:10] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 14:52:10,841 - root - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-30 14:52:10,841 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:52:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-30 14:52:10,988 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:52:10] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 14:52:11,014 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:52:11] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 14:52:11,025 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:52:11] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 14:54:00,793 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 14:54:00,793 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 14:54:06,102 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:06] "GET / HTTP/1.1" 200 -
+2024-11-30 14:54:06,163 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:06] "[36mGET /static/dashboard.js HTTP/1.1[0m" 304 -
+2024-11-30 14:54:06,319 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:06] "[36mGET /static/dashboard_stylesheet.css HTTP/1.1[0m" 304 -
+2024-11-30 14:54:06,467 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:06] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 14:54:06,473 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:06] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 14:54:06,615 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:06] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 14:54:06,624 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:06] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 14:54:09,014 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:09] "GET /api/cost_per_year HTTP/1.1" 200 -
+2024-11-30 14:54:09,024 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:09] "GET /api/cost_per_region HTTP/1.1" 200 -
+2024-11-30 14:54:09,032 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:09] "GET /api/cost_per_well_type HTTP/1.1" 200 -
+2024-11-30 14:54:09,039 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:09] "GET /api/cost_per_era HTTP/1.1" 200 -
+2024-11-30 14:54:09,899 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:09] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 14:54:09,904 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:09] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 14:54:09,919 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:09] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 14:54:09,921 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 14:54:09] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:01:33,887 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:01:33] "GET /api/cost_per_year HTTP/1.1" 200 -
+2024-11-30 15:01:33,911 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:01:33] "GET /api/cost_per_era HTTP/1.1" 200 -
+2024-11-30 15:01:33,923 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:01:33] "GET /api/cost_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:01:33,977 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:01:33] "GET /api/cost_per_region HTTP/1.1" 200 -
+2024-11-30 15:01:34,923 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:01:34] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:01:34,935 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:01:34] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 15:01:35,139 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:01:35] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:01:35,161 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:01:35] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:03:16,571 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 15:03:16,571 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 15:03:19,725 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:03:19] "GET / HTTP/1.1" 200 -
+2024-11-30 15:03:19,781 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:03:19] "GET /static/dashboard_stylesheet.css HTTP/1.1" 200 -
+2024-11-30 15:03:19,796 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:03:19] "GET /static/dashboard.js HTTP/1.1" 200 -
+2024-11-30 15:03:19,864 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:03:19] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:03:19,865 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:03:19] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:03:19,885 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:03:19] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:03:19,900 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:03:19] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 15:03:20,060 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:03:20] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:03:27,521 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:03:27] "GET /api/cost_per_year HTTP/1.1" 200 -
+2024-11-30 15:03:27,533 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:03:27] "GET /api/cost_per_region HTTP/1.1" 200 -
+2024-11-30 15:03:27,541 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:03:27] "GET /api/cost_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:03:27,555 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:03:27] "GET /api/cost_per_era HTTP/1.1" 200 -
+2024-11-30 15:04:52,227 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:04:52] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:04:52,244 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:04:52] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 15:04:52,274 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:04:52] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:04:52,276 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:04:52] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:04:52,986 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:04:52] "GET /api/cost_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:04:53,213 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:04:53] "GET /api/cost_per_year HTTP/1.1" 200 -
+2024-11-30 15:04:53,239 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:04:53] "GET /api/cost_per_region HTTP/1.1" 200 -
+2024-11-30 15:04:53,263 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:04:53] "GET /api/cost_per_era HTTP/1.1" 200 -
+2024-11-30 15:07:44,500 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 15:07:44,501 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 15:07:48,088 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:48] "GET / HTTP/1.1" 200 -
+2024-11-30 15:07:48,136 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:48] "[36mGET /static/dashboard_stylesheet.css HTTP/1.1[0m" 304 -
+2024-11-30 15:07:48,284 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:48] "GET /static/dashboard.js HTTP/1.1" 200 -
+2024-11-30 15:07:48,354 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:48] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 15:07:48,580 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:48] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:07:48,644 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:48] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:07:48,650 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:48] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:07:48,653 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:48] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:07:55,796 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:55] "GET /api/cost_per_year HTTP/1.1" 200 -
+2024-11-30 15:07:55,797 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:55] "GET /api/cost_per_region HTTP/1.1" 200 -
+2024-11-30 15:07:55,804 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:55] "GET /api/cost_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:07:55,945 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:55] "GET /api/cost_per_era HTTP/1.1" 200 -
+2024-11-30 15:07:59,544 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:59] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:07:59,550 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:59] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:07:59,553 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:59] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:07:59,557 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:07:59] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 15:08:54,762 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 15:08:54,762 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 15:08:57,403 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:08:57] "GET / HTTP/1.1" 200 -
+2024-11-30 15:08:57,463 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:08:57] "[36mGET /static/dashboard_stylesheet.css HTTP/1.1[0m" 304 -
+2024-11-30 15:08:57,465 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:08:57] "GET /static/dashboard.js HTTP/1.1" 200 -
+2024-11-30 15:08:57,526 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:08:57] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:08:57,534 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:08:57] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:08:57,541 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:08:57] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:08:57,555 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:08:57] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 15:08:57,556 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:08:57] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:09:00,315 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:00] "GET /api/cost_per_region HTTP/1.1" 200 -
+2024-11-30 15:09:00,326 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:00] "GET /api/cost_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:09:00,328 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:00] "GET /api/cost_per_year HTTP/1.1" 200 -
+2024-11-30 15:09:00,330 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:00] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:09:00,344 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:00] "GET /api/cost_per_era HTTP/1.1" 200 -
+2024-11-30 15:09:39,546 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:39] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 15:09:39,548 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:39] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:09:39,560 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:39] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:09:39,561 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:39] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:09:39,563 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:39] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:09:41,060 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:41] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:09:41,062 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:41] "GET /api/cost_per_year HTTP/1.1" 200 -
+2024-11-30 15:09:41,063 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:41] "GET /api/cost_per_region HTTP/1.1" 200 -
+2024-11-30 15:09:41,062 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:41] "GET /api/cost_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:09:41,064 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:09:41] "GET /api/cost_per_era HTTP/1.1" 200 -
+2024-11-30 15:10:46,888 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 15:10:46,889 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 15:10:49,250 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:10:49] "GET / HTTP/1.1" 200 -
+2024-11-30 15:10:49,296 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:10:49] "[36mGET /static/dashboard_stylesheet.css HTTP/1.1[0m" 304 -
+2024-11-30 15:10:49,448 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:10:49] "GET /static/dashboard.js HTTP/1.1" 200 -
+2024-11-30 15:10:49,500 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:10:49] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:10:49,505 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:10:49] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:10:49,507 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:10:49] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:10:49,518 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:10:49] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:10:49,527 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:10:49] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 15:10:51,764 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:10:51] "GET /api/cost_per_region HTTP/1.1" 200 -
+2024-11-30 15:10:51,765 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:10:51] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:10:51,776 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:10:51] "GET /api/cost_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:10:51,778 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:10:51] "GET /api/cost_per_year HTTP/1.1" 200 -
+2024-11-30 15:10:51,794 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:10:51] "GET /api/cost_per_era HTTP/1.1" 200 -
+2024-11-30 15:12:01,391 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 15:12:01,391 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 15:12:03,932 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:03] "GET / HTTP/1.1" 200 -
+2024-11-30 15:12:04,060 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:04] "GET /static/dashboard_stylesheet.css HTTP/1.1" 200 -
+2024-11-30 15:12:04,064 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:04] "[36mGET /static/dashboard.js HTTP/1.1[0m" 304 -
+2024-11-30 15:12:04,231 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:04] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:12:04,233 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:04] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:12:04,245 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:04] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:12:04,247 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:04] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:12:04,259 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:04] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 15:12:24,248 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 15:12:24,248 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 15:12:26,701 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:26] "GET / HTTP/1.1" 200 -
+2024-11-30 15:12:26,774 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:26] "[36mGET /static/dashboard.js HTTP/1.1[0m" 304 -
+2024-11-30 15:12:26,774 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:26] "GET /static/dashboard_stylesheet.css HTTP/1.1" 200 -
+2024-11-30 15:12:26,840 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:26] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 15:12:27,058 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:27] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:12:27,061 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:27] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:12:27,062 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:27] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:12:27,066 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:12:27] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:14:03,694 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 15:14:03,694 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 15:14:06,191 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:14:06] "GET / HTTP/1.1" 200 -
+2024-11-30 15:14:06,256 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:14:06] "GET /static/dashboard_stylesheet.css HTTP/1.1" 200 -
+2024-11-30 15:14:06,258 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:14:06] "[36mGET /static/dashboard.js HTTP/1.1[0m" 304 -
+2024-11-30 15:14:06,323 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:14:06] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:14:06,553 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:14:06] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:14:06,569 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:14:06] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:14:06,580 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:14:06] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 15:14:06,665 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:14:06] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:17:26,241 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 15:17:26,241 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 15:17:29,308 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:29] "GET / HTTP/1.1" 200 -
+2024-11-30 15:17:29,359 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:29] "[36mGET /static/dashboard.js HTTP/1.1[0m" 304 -
+2024-11-30 15:17:29,501 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:29] "GET /static/dashboard_stylesheet.css HTTP/1.1" 200 -
+2024-11-30 15:17:29,560 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:29] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 15:17:29,677 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:29] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:17:29,698 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:29] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:17:29,741 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:29] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:17:29,810 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:29] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:17:35,931 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:35] "GET /api/cost_per_region HTTP/1.1" 200 -
+2024-11-30 15:17:35,939 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:35] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:17:35,943 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:35] "GET /api/cost_per_year HTTP/1.1" 200 -
+2024-11-30 15:17:35,949 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:35] "GET /api/cost_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:17:35,956 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:35] "GET /api/cost_per_era HTTP/1.1" 200 -
+2024-11-30 15:17:38,298 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:38] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:17:38,301 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:38] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:17:38,302 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:38] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:17:38,305 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:38] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:17:38,444 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:17:38] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 15:19:07,957 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 15:19:07,957 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 15:19:18,161 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:18] "GET / HTTP/1.1" 200 -
+2024-11-30 15:19:18,414 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:18] "GET /static/dashboard_stylesheet.css HTTP/1.1" 200 -
+2024-11-30 15:19:18,419 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:18] "[36mGET /static/dashboard.js HTTP/1.1[0m" 304 -
+2024-11-30 15:19:18,456 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:18] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:19:18,478 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:18] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:19:18,488 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:18] "GET /api/days_per_era HTTP/1.1" 200 -
+2024-11-30 15:19:18,646 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:18] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:19:18,652 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:18] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:19:20,604 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:20] "GET /api/cost_per_year HTTP/1.1" 200 -
+2024-11-30 15:19:20,607 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:20] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:19:20,618 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:20] "GET /api/cost_per_region HTTP/1.1" 200 -
+2024-11-30 15:19:20,622 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:20] "GET /api/cost_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:19:20,631 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:20] "GET /api/cost_per_era HTTP/1.1" 200 -
+2024-11-30 15:19:22,275 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:22] "GET /api/days_per_region HTTP/1.1" 200 -
+2024-11-30 15:19:22,282 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:22] "GET /api/summary_stats HTTP/1.1" 200 -
+2024-11-30 15:19:22,286 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:22] "GET /api/days_per_well_type HTTP/1.1" 200 -
+2024-11-30 15:19:22,288 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:22] "GET /api/days_per_year HTTP/1.1" 200 -
+2024-11-30 15:19:22,292 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2024 15:19:22] "GET /api/days_per_era HTTP/1.1" 200 -
