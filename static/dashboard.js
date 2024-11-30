@@ -20,12 +20,14 @@ document.getElementById('days-btn').addEventListener('click', function () {
     selectedColumn = 'days';
     toggleButtons(this, document.getElementById('cost-btn'));
     refreshCharts();
+    updateSubtitleWithStats(); 
 });
 // if costs
 document.getElementById('cost-btn').addEventListener('click', function () {
     selectedColumn = 'cost';
     toggleButtons(this, document.getElementById('days-btn'));
     refreshCharts();
+    updateSubtitleWithStats(); 
 });
 
 // Function to toggle button states
@@ -237,6 +239,36 @@ function refreshCharts() {
         }
     }));
 }
+
+// Function to fetch and update the subtitle with summary statistics
+async function updateSubtitleWithStats() {
+    try {
+        // Fetch the summary statistics from the API
+        const response = await fetch("/api/summary_stats");
+        const data = await response.json();
+
+        // Conditionally format the output based on the selected column
+        const formattedStats = `
+        Number of Wells: ${data.total_wells.toLocaleString('en-US')} | 
+        ${selectedColumn === 'days' 
+            ? `Average Days per 1000m: ${(+data.avg_days.toFixed(1)).toLocaleString('en-US')}` 
+            : `Average Cost per 1000m: ${(+data.avg_cost.toFixed(1)).toLocaleString('en-US')}`
+        }
+    `;
+    
+
+        // Update the subtitle element
+        const subtitleElement = document.querySelector(".dashboard-subtitle");
+        subtitleElement.textContent = formattedStats;
+    } catch (error) {
+        console.error("Error fetching or rendering subtitle stats:", error);
+    }
+}
+
+// Ensure the subtitle is updated when the page loads
+document.addEventListener("DOMContentLoaded", updateSubtitleWithStats);
+
+
 
 // Initial fetch and render of charts using the default column
 refreshCharts();

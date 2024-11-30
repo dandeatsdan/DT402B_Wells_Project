@@ -150,6 +150,30 @@ def data_per_year(column: str) -> Response:
     """
     return handle_grouped_avg_data(query, "Year", f"avg_{column}")
 
+@app.route("/api/summary_stats", methods=["GET"])
+@cache.cached(timeout=60)
+def summary_stats() -> Response:
+    query = """
+    SELECT 
+        SUM(Number_of_Wells) AS total_wells,
+        AVG(Cost_per_1000m) AS avg_cost,
+        AVG(Days_per_1000m) AS avg_days
+    FROM WellsDataTable;
+    """
+    result = query_db(query)
+    if result:
+        total_wells, avg_cost, avg_days = result[0]
+    else:
+        total_wells, avg_cost, avg_days = 0, 0, 0
+    
+    return jsonify({
+        "total_wells": total_wells,
+        "avg_cost": avg_cost,
+        "avg_days": avg_days
+    })
+
+
+
 ###################################################################################
 # Run the app
 if __name__ == "__main__":
